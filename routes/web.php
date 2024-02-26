@@ -21,6 +21,7 @@ Route::get('/', function () {
 
 
 Route::get('hello/{name}',  [helloController::class, 'index']);
+Route::get('blog', [App\Http\Controllers\BlogController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
